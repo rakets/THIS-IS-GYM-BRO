@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+	<meta charset="utf-8">
+	<title>This is gym, bro !</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css" type="text/css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+		rel="stylesheet">
+
+	<script src="js/mainPage.js"></script>
+</head>
+
+<body>
+	<header id="top">
+		<div class="container top mobil">
+			<div id="logo">
+				<a href="index.html"><img src="imgProjektc/lok2.webp" alt="Fitness"></a>
+			</div>
+			<div id="main-menu">
+				<ul>
+					<li><a href="#offers">Offers</a></li>
+					<li><a href="#aboutus">About us</a></li>
+					<li><a href="#contact">Contacts</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+
+	<!-- Banner -->
+	<section class="banner">
+		<div class="container">
+			<div class="banner-box">
+				<h1 class="banner-text text"><b>This is gym, bro !</b></h1>
+			</div>
+		</div>
+	</section>
+
+	<!-- Nasza oferta -->
+	<section id="offers" class="offer text">
+		<div class="container">
+			<h2 class="offer-text-title ">Our offers :</h2>
+			<div class="cards">
+				<button class="card-button" onclick="openPDF('files/group_trainings.pdf')">
+					<div class="card card1">
+						<div class="card-body">
+							<p class="card-text-title text">group trainings</p>
+						</div>
+					</div>
+				</button>
+				<button class="card-button" onclick="openPDF('files/crossfit.pdf')">
+					<div class="card card2">
+						<div class="card-body">
+							<p class="card-text-title text">crossfit</p>
+						</div>
+					</div>
+				</button>
+				<button class="card-button">
+					<div class="card card3">
+						<div class="card-body">
+							<p class="card-text-title text">gym</p>
+						</div>
+					</div>
+				</button>
+				<button class="card-button">
+					<div class="card card4">
+						<div class="card-body">
+							<p class="card-text-title text">personal training</p>
+						</div>
+					</div>
+				</button>
+			</div>
+		</div>
+	</section>
+
+	<!-- O nas -->
+	<section id="aboutus">
+		<div class="container aboutus text">
+			<div class="three-columns one">
+				<div class="content-wrapper">
+					<h3>
+						Sure, here's a short text you can use for the "This is gym, bro !" section in your "About Us"
+						section:
+						Welcome to "This is gym, bro !" – your ultimate destination for fitness enthusiasts! Our gym is
+						more than just a place to work out; it's a community of like-minded individuals dedicated to
+						achieving their fitness goals and living a healthy lifestyle.
+					</h3>
+				</div>
+			</div>
+			<div class="three-columns two">
+				<div class="content-wrapper">
+					<img src="imgProjektc/lok2.webp" alt="Your GYM">
+					<h2>This is gym, bro !</h2>
+				</div>
+			</div>
+			<div class="three-columns three">
+				<div class="content-wrapper">
+					<h3>
+						At "This is gym, bro !", we offer state-of-the-art facilities, expert trainers, and a wide range
+						of classes and programs tailored to suit every fitness level. Whether you're a beginner or a
+						seasoned athlete, our supportive environment will motivate you to push your limits and reach new
+						heights.
+					</h3>
+					<h3>
+						Join us today and experience the camaraderie, energy, and excitement of "This is gym, bro !"
+						Let's sweat, grow, and achieve greatness together!
+					</h3>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Kontakt -->
+	<section id="contact">
+		<div class="container contanct">
+			<div class="two-columns one">
+				<h2 class="center-text text">Write to us:</h2>
+				<form action="#" method="post">
+					<input type="text" name="name" value="" data-default-value="Write name"
+						onclick="clearInput(this)"><br>
+					<input type="text" name="email" value="" data-default-value="Write e-mail"
+						onclick="clearInput(this)"><br>
+					<button type="submit" class="button">Send</button>
+				</form>
+			</div>
+			<div class="two-columns two">
+				<div class="text">
+					<h2>Do you have any questions?</h2>
+					<h2>+48511224925</h2>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Adress -->
+	<section id="adress">
+		<div class="container adress">
+			<div class="two-columns one">
+				<iframe
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d79969.71547069619!2d22.49373060183956!3d51.21808809777098!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472257141e154061%3A0x5528ee7af6e8e95f!2sLublin!5e0!3m2!1spl!2spl!4v1485810185452"
+					width="300" height="300" style="border:0" allowfullscreen>Google Map</iframe>
+			</div>
+			<div class="two-columns two">
+				<div class="text">
+					<h2>Lublin, Lawinowa 3</h2>
+					<h2>Mo. - Fr. 6.00 - 23.00</h2>
+					<h2>Sa. - Su. 8.00 - 20.00</h2>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Stopka -->
+	<footer>
+		<div class="container">
+			<p>&copy; "This is gym, bro !"| ul. Lawinowa 3, 20-864 Lublin | tel. (48) 511-224-925, e-mail:
+				vushkevih@gmail.com</p>
+		</div>
+	</footer>
+</body>
+
+</html>

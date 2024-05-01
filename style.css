@@ -1,0 +1,905 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* @media screen and (min-width: 1400px) { */
+
+	/* mobil */
+	body {
+		background: url("imgProjektc/background_texture1.jpg");
+	}
+
+	/* header */
+	#top {
+		font-size: 25px;
+
+		width: 100%;
+		height: 3em;
+		background: #36152ac4;
+		position: sticky;
+		top: 0;
+		z-index: 1000;
+		backdrop-filter: blur(10px);
+	}
+
+	.mobil {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	#logo img {
+		width: 13em;
+		height: 3em;
+		border-top-right-radius: 1em;
+		border-bottom-right-radius: 1em;
+	}
+
+	#main-menu ul {
+		display: flex;
+		justify-content: space-between;
+		padding: 1em;
+	}
+
+	#main-menu ul li {
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+
+	#main-menu ul li a {
+		font-size: 25px;
+		color: #FFF;
+		font-family: 'Lato', sans-serif;
+		font-style: normal;
+		text-decoration: none;
+	}
+
+/* ------------------ */
+
+	.offer-text-title {
+		text-align: center;
+		margin-bottom: 20px;
+		font-size: 40px;
+	}
+
+	.offer {
+		color: #FFF;
+		background: url('imgProjektc/concrete.jpg');
+		font-family: "Lato", sans-serif;
+		font-weight: 900;
+		font-style: italic;
+		margin: 0 auto;
+	}
+
+	.offer h2 {
+		margin-bottom: 40px;
+		text-transform: uppercase;
+	}
+
+	/* Przyciski */
+	.button {
+		display: inline-block;
+		padding: 8px 20px;
+		margin: 16px 0;
+		text-decoration: none;
+		text-transform: uppercase;
+		border: none;
+		border-radius: 5px;
+	}
+
+	.button-light {
+		background: #FFFFFF;
+		color: #000000;
+	}
+
+	.button-green {
+		background: #A1D76F;
+		color: #FFFFFF;
+	}
+
+	.text {
+		font-family: "Lato", sans-serif;
+		font-weight: 900;
+		font-style: italic;
+		margin: 0 auto;
+	}
+
+	/* Baner */
+
+	img {
+		max-width: 40%;
+		height: auto;
+	}
+
+	.banner-box{
+		margin: auto;
+		background: url("imgProjektc/banner.webp") 0 -120px;
+		border-radius: 50px;
+		height: 100px;
+		width: 90%;
+
+	}
+
+	.banner-box{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.banner-text {
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 50px;
+		color: #FFF;
+		width: 100%;
+		height: auto;
+	}
+
+	section {
+		clear: both;
+		padding: 50px 0;
+		overflow: auto;
+	}
+
+
+	/* Sekcja offer */
+
+	.cards {
+		display: flex;
+		justify-content: center;
+	}
+
+	.card-button {
+		border: none;
+		background: none;
+		cursor: pointer;
+		margin: 0 10px;
+	}
+
+	.card {
+		width: 18rem;
+		border: 1.5px solid #3f0f37;
+		border-radius: 15px;
+
+		box-shadow: 0px 0px 10px #130410;
+		overflow: hidden;
+
+		height: 12.5rem;
+		position: relative;
+	}
+
+	.card-body {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	.card-text-title {
+		text-align: center;
+		padding: 70px;
+		text-transform: uppercase;
+		font-size: 30px;
+		color: #FFF;
+		font-style: normal;
+	}
+
+	.button-card {
+		border-radius: 40px;
+		border: none;
+	}
+
+	.card1 {
+		background: url("imgProjektc/card1.jpg") -370px;
+	}
+
+	.card2 {
+		background: url("imgProjektc/card2.jpg") 0 220px;
+	}
+
+	.card3 {
+		background: url("imgProjektc/hala.webp") 0 250px;
+	}
+
+	.card4 {
+		background: url("imgProjektc/card4.jpg") 500px -450px;
+	}
+
+	/* About us */
+
+	#aboutus {
+		background: #000;
+		padding: 50px 0;
+	}
+
+	.three-columns {
+		width: 33.33%;
+		float: left;
+		box-sizing: border-box;
+		padding: 0 15px;
+	}
+
+	.content-wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	#aboutus h2 {
+		color: #FFF;
+		text-transform: uppercase;
+		font-size: 40px;
+		margin-top: 20px;
+	}
+
+	#aboutus h3 {
+		padding-left: 20px;
+		padding-right: 20px;
+		text-align: center;
+		color: #FFF;
+		font-size: 30px;
+	}
+
+	/* Sekcja Kontakt */
+	#contact {
+		text-align: center;
+		background: url('imgProjektc/concrete.jpg');
+	}
+
+	#contact * {
+		color: #000;
+		font-style: italic;
+		font-family: "Lato", sans-serif;
+		font-weight: 900;
+	}
+
+	#contact input {
+		margin-bottom: 16px;
+		border-radius: 5px;
+		border: 1px solid #DDDD;
+		padding: 8px;
+		width: 80%;
+		font-size: 20px;
+	}
+
+	#contact h2 {
+		color: #FFF;
+		font-size: 40px;
+	}
+
+	#contact button {
+		background-color: #fa33d9;
+		width: 82%;
+
+		color: #000000;
+		background-color: #fa33d9;
+		font-family: "Lato", sans-serif;
+		font-weight: 900;
+		font-size: 20px;
+		font-style: normal;
+		margin: 0 auto;
+	}
+
+	#contact h2 {
+		padding: 10px 0;
+		text-transform: uppercase;
+		font-size: 220%;
+
+	}
+
+	.two-columns {
+		width: 50%;
+		float: left;
+		box-sizing: border-box;
+		padding: 0 15px;
+	}
+
+	/* adress */
+	#adress {
+		text-align: center;
+		background: url('imgProjektc/grass2.jpg');
+		/* background-size: cover; */
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+	}
+
+	#adress * {
+		font-style: italic;
+		font-family: "Lato", sans-serif;
+		font-weight: 900;
+		color: #FFF;
+	}
+
+	#adress h2 {
+		padding: 10px 0;
+		text-transform: uppercase;
+		font-size: 40px;
+	}
+
+	.two-columns {
+		width: 50%;
+		float: left;
+		box-sizing: border-box;
+		padding: 0 15px;
+	}
+
+	.two-columns iframe {
+		width: 85%;
+		box-sizing: border-box;
+		padding: 0 15px;
+	}
+
+
+	/* Stopka */
+	footer {
+		background: #993366;
+		color: #FFFFFF;
+		padding: 16px 0;
+		text-align: right;
+	}
+/* } */
+
+/* mobil */
+@media screen and (max-width: 992px) {
+
+	body {
+		background: url("imgProjektc/background_texture1.jpg");
+	}
+
+	/* header */
+	#top {
+		font-size: 25px;
+
+		width: 100%;
+		height: 3em;
+		background: #36152ac4;
+		position: sticky;
+		top: 0;
+		z-index: 1000;
+		backdrop-filter: blur(10px);
+	}
+
+	.mobil {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	#logo img {
+		width: 10em;
+		height: 3em;
+		border-top-right-radius: 1em;
+		border-bottom-right-radius: 1em;
+	}
+
+	#main-menu ul {
+		display: flex;
+		justify-content: space-between;
+		padding: 1em;
+	}
+
+	#main-menu ul li {
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+
+	#main-menu ul li a {
+		font-size: 25px;
+		color: #FFF;
+		font-family: 'Lato', sans-serif;
+		font-style: normal;
+		text-decoration: none;
+	}
+
+	/* #top {
+	  height: auto;
+	  width: 100%;
+	  background: #000;
+	  padding: 10px 0;
+	  font-size: 1em;
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	  position: sticky;
+	} */
+
+	/* #main-menu {
+	  list-style: none;
+	  margin: 0;
+	  padding: 0;
+
+	  display: flex;
+	  flex-direction: column; 
+	  align-items: center; 
+
+	} */
+
+	/* #main-menu ul {
+	  display: flex;
+	  flex-wrap: wrap;
+	  justify-content: center;
+	} */
+
+	/* #main-menu div {
+		margin: 10px 0;
+	} */
+
+	/* #logo {
+		display: flex;
+		justify-content: center; 
+	  } */
+
+	/* #logo img {
+		vertical-align: middle;
+		max-width: 100%; 
+	  }	   */
+
+	/* #main-menu li {
+	  margin-left: 10px;
+	} */
+
+	/* #main-menu li:first-child {
+	  margin-left: 0;
+	} */
+
+	/* #main-menu li a {
+	  color: #FFF;
+	  text-decoration: none;
+	  padding: 0 20px;
+	} */
+
+	/* .container {
+	  max-width: 90%;
+	  margin: auto;
+	} */
+
+	/* .container input[type="text"] {
+	  color: #666666;
+	} */
+
+	/* baner */
+	/* img {
+		max-width: 80%;
+		height: auto;
+	} */
+
+	.banner {
+		width: 90%;
+		height: 15px;
+		/* Установите высоту баннера по вашему усмотрению */
+		background: url("imgProjektc/banner.webp") 0 -120px;
+		background-size: cover;
+		/* Растягиваем изображение на всю область баннера */
+		background-position: center;
+		/* Центрируем изображение */
+		border-radius: 35px;
+		/* Закругляем углы */
+		margin: 20px auto;
+		/* Выравниваем баннер по центру */
+		position: relative;
+		/* Измените позицию на relative */
+		overflow: hidden;
+		/* Обрежем изображение, если оно выходит за границы */
+	}
+
+	.banner-text {
+		position: absolute;
+		/* Абсолютное позиционирование для текста */
+		top: 50%;
+		/* Располагаем текст по вертикали посередине баннера */
+		left: 50%;
+		/* Располагаем текст по горизонтали посередине баннера */
+		transform: translate(-50%, -50%);
+		/* Сдвигаем текст на половину своей ширины и высоты назад */
+		text-align: center;
+		padding: 20px;
+		/* Добавляем внутренние отступы */
+		background-color: rgba(0, 0, 0, 0.5);
+		/* Добавляем прозрачный цвет фона для текста */
+		border-radius: 10px;
+		/* Закругляем углы текстового блока */
+		color: #fff;
+		/* Устанавливаем цвет текста */
+		font-size: 30px;
+		/* Устанавливаем размер шрифта */
+		text-transform: uppercase;
+		/* Преобразуем текст в верхний регистр */
+	}
+
+
+
+	/* offers	 */
+	.offer {
+		color: #fff;
+		background: url('imgProjektc/concrete.jpg');
+		margin: 0 auto;
+	}
+
+	.offer-text-title {
+		text-align: center;
+		margin-bottom: 20px;
+		font-size: 30px;
+	}
+
+	.offer h2 {
+		margin-bottom: 40px;
+		text-transform: uppercase;
+	}
+
+	/* Przyciskи */
+	.button {
+		display: inline-block;
+		padding: 8px 20px;
+		margin: 16px 0;
+		text-decoration: none;
+		text-transform: uppercase;
+		border: none;
+		border-radius: 5px;
+	}
+
+	.button-light {
+		background: #FFFFFF;
+		color: #000000;
+	}
+
+	.button-green {
+		background: #A1D76F;
+		color: #FFFFFF;
+	}
+
+	.text {
+		font-family: "Lato", sans-serif;
+		font-weight: 900;
+		font-style: italic;
+		margin: 0 auto;
+		font-size: 25px;
+	}
+
+	section {
+		clear: both;
+		padding: 50px 0;
+		overflow: auto;
+	}
+
+
+	/* Секция offer */
+
+	.cards {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+	}
+
+	.card-button {
+		border: none;
+		background: none;
+		cursor: pointer;
+		margin: 0 10px;
+		display: flex;
+		justify-content: center;
+	}
+
+	.card {
+		width: 70%;
+		margin: 20px;
+
+		border: 1.5px solid #3f0f37;
+		border-radius: 15px;
+		box-shadow: 0px 0px 10px #130410;
+		overflow: hidden;
+		height: 12.5rem;
+		position: relative;
+	}
+
+	.card-body {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	.card-text-title {
+		text-align: center;
+		padding: 50px;
+		/* Уменьшаем внутренние отступы */
+		text-transform: uppercase;
+		font-size: 160%;
+		/* Уменьшаем размер шрифта */
+		color: #FFF;
+		font-style: normal;
+	}
+
+	.button-card {
+		border-radius: 40px;
+		border: none;
+	}
+
+	.card1 {
+		background: url("imgProjektc/card1.jpg") -370px;
+	}
+
+	.card2 {
+		background: url("imgProjektc/card2.jpg") 0 220px;
+	}
+
+	.card3 {
+		background: url("imgProjektc/hala.webp") 0 250px;
+	}
+
+	.card4 {
+		background: url("imgProjektc/card4.jpg") 500px -450px;
+	}
+
+	/* About us */
+
+	#aboutus {
+		background: #000;
+		padding: 50px 0;
+	}
+
+	.three-columns {
+		width: 100%;
+		/* Изменяем ширину колонок на 100% */
+		float: none;
+		box-sizing: border-box;
+		padding: 0 15px;
+	}
+
+	.content-wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	#aboutus h2 {
+		color: #FFF;
+		text-transform: uppercase;
+		font-size: 40px;
+	}
+
+	#aboutus h3 {
+		text-align: center;
+		color: #FFF;
+		font-size: 30px;
+	}
+
+	#aboutus img {
+		font-size: 30px;
+		width: 6em;
+		height: 6em;
+	}
+
+
+
+	/* Секция Kontakt */
+	#contact {
+		text-align: center;
+		background: url('imgProjektc/concrete.jpg');
+	}
+
+	#contact * {
+		color: #000;
+		font-style: italic;
+		font-family: "Lato", sans-serif;
+		font-weight: 900;
+	}
+
+	#contact input {
+		margin-bottom: 16px;
+		border-radius: 5px;
+		border: 1px solid #DDDD;
+		padding: 8px;
+		width: 80%;
+	}
+
+	#contact h2 {
+		color: #FFF;
+	}
+
+	#contact button {
+		background-color: #fa33d9;
+		width: 80%;
+		color: #000000;
+		background-color: #fa33d9;
+		font-family: "Lato", sans-serif;
+		font-weight: 900;
+		font-style: normal;
+		margin: 0 auto;
+	}
+
+	#contact h2 {
+		padding: 10px 0;
+		text-transform: uppercase;
+		font-size: 30px;
+	}
+
+	.two-columns {
+		width: 100%;
+		/* Изменяем ширину колонок на 100% */
+		float: none;
+		box-sizing: border-box;
+		padding: 0 15px;
+	}
+
+	.two-columns iframe {
+		width: 85%;
+		box-sizing: border-box;
+		padding: 0 15px;
+	}
+
+
+	/* Адрес */
+	#adress {
+		text-align: center;
+		background: url('imgProjektc/grass2.jpg');
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+	}
+
+	#adress * {
+		font-style: italic;
+		font-family: "Lato", sans-serif;
+		font-weight: 900;
+		color: #FFF;
+	}
+
+	#adress h2 {
+		padding: 10px 0;
+		text-transform: uppercase;
+		font-size: 30px;
+	}
+
+	.two-columns {
+		width: 100%;
+		/* Изменяем ширину колонок на 100% */
+		float: none;
+		box-sizing: border-box;
+		padding: 0 15px;
+	}
+
+	.two-columns iframe {
+		width: 85%;
+		box-sizing: border-box;
+		padding: 0 15px;
+	}
+
+
+	/* Футер */
+	footer {
+		background: #993366;
+		color: #FFFFFF;
+		padding: 16px 0;
+		text-align: right;
+	}
+}
