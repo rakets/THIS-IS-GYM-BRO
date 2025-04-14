@@ -29,4 +29,21 @@ function openPDF(way){
     window.open(way, '_blank');
 }
 
+function writeLetter(form, event){
+    event.preventDefault(); // Отменяем стандартное поведение формы (не отправляем её)
+
+    let nameUser = form.name.value;
+    console.log(nameUser);
+    
+    let emailUser = form.email.value;
+    console.log(emailUser);
+    
+    const emailTo = "vushkevih@gmail.com";
+    const subject = "Zamówienie";
+    const body = `Hello!\n\n My name is ${nameUser}\n\n ${emailUser}\n\nWith best regards,\n\n ${nameUser}`;
+
+    const mailtoLink = `mailto:${emailTo}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    
+    window.open(mailtoLink, '_blank');
+}
 
