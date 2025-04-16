@@ -160,6 +160,7 @@ table {
 		text-shadow: 0 0 20px rgb(224, 35, 193);
 		box-shadow: none;
 		background-color: transparent;
+		cursor: pointer;
 	}
 
 	.mobil {
