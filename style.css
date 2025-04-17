@@ -135,7 +135,7 @@ table {
 	border-spacing: 0;
 }
 
-/* @media screen and (min-width: 1400px) { */
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
 
 	/* mobil */
 	body {
@@ -494,10 +494,10 @@ table {
 		padding: 16px 0;
 		text-align: right;
 	}
-/* } */
+}
 
-/* mobil */
-@media screen and (max-width: 992px) {
+/*for mobil */
+@media screen and (max-width: 768px) {
 
 	body {
 		background: url("imgProjektc/background_texture1.jpg");
