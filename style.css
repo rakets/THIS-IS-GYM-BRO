@@ -521,22 +521,36 @@ table {
 		justify-content: space-between;
 	}
 
-	#logo img {
-		width: 10em;
-		height: 3em;
-		border-top-right-radius: 1em;
-		border-bottom-right-radius: 1em;
+	.container.top.mobil {
+		height: 100%;
+		width: 100%;
+		display: flex; /* если нужно выравнивание содержимого */
+		align-items: center; /* вертикальное центрирование */
+	}
+
+	#logo {
+		display: none;
+	}
+
+	#main-menu {
+		height: 100%;
+		width: 100%;
+		display: flex; 
+		align-items: center;
+		justify-content: center;
 	}
 
 	#main-menu ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
 		display: flex;
-		justify-content: space-between;
-		padding: 1em;
+		gap: 0.5em; /* расстояние между пунктами меню */
 	}
 
 	#main-menu ul li {
-		padding-left: 1em;
-		padding-right: 1em;
+		padding-left: 0.5em;
+		padding-right: 0.5em;
 	}
 
 	#main-menu ul li a {
