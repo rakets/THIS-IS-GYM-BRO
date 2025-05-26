@@ -3,24 +3,24 @@
 //     inputElement.value = "";
 // }
 
-// Функция для очистки поля ввода и установки текста по умолчанию
+// A function for clearing the input field and setting the default text
 function clearInput(inputElement) {
     inputElement.value = "";
 }
 
-// Функция для восстановления текста по умолчанию при клике вне поля ввода
+// A function to restore the default text when clicked outside the input field
 function restoreDefaultValue(inputElement, defaultValue) {
     if (inputElement.value === "") {
         inputElement.value = defaultValue;
     }
 }
 
-// Отслеживание кликов вне полей ввода
+// Tracking clicks outside the input fields
 document.addEventListener("click", function(event) {
-    var inputElements = document.querySelectorAll("input[type='text']"); // Получаем все поля ввода типа "text"
+    var inputElements = document.querySelectorAll("input[type='text']"); // We get all the input fields of the "text" type
     inputElements.forEach(function(inputElement) {
-        if (!inputElement.contains(event.target)) { // Проверяем, что клик был сделан не внутри поля ввода
-            restoreDefaultValue(inputElement, inputElement.getAttribute("data-default-value")); // Восстанавливаем значение по умолчанию
+        if (!inputElement.contains(event.target)) { // We check that the click was not made inside the input field.
+            restoreDefaultValue(inputElement, inputElement.getAttribute("data-default-value")); // Restoring the default value
         }
     });
 });
@@ -51,4 +51,17 @@ function writeLetter(form, event){
     
     window.open(mailtoLink, '_blank');
 }
+
+// Burger menu toggle
+document.addEventListener("DOMContentLoaded", function () {
+    const burgerButton = document.getElementById('burger-button');
+    const menu = document.getElementById('main-menu');
+
+    if (burgerButton && menu) {
+        burgerButton.addEventListener('click', function () {
+            menu.classList.toggle('active');
+        });
+    }
+});
+
 

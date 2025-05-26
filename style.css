@@ -135,7 +135,7 @@ table {
 	border-spacing: 0;
 }
 
-/* @media screen and (min-width: 1400px) { */
+@media screen and (min-width: 1400px) {
 
 	/* mobil */
 	body {
@@ -494,7 +494,11 @@ table {
 		padding: 16px 0;
 		text-align: right;
 	}
-/* } */
+
+	.burger {
+		display: none;
+	}
+}
 
 /* mobil */
 @media screen and (max-width: 992px) {
@@ -867,4 +871,37 @@ table {
 		padding: 16px 0;
 		text-align: right;
 	}
+
+	.burger {
+	background: none;
+	border: none;
+	font-size: 30px;
+	color: rgb(255, 255, 255);
+	cursor: pointer;
+	margin-right: 1em;
+	z-index: 1001;
+	}
+
+	/* Скрываем меню по умолчанию */
+	#main-menu {
+	display: none;
+	flex-direction: column;
+	background-color: rgba(193, 73, 149, 0.95);
+	position: absolute;
+	top: 3em;
+	left: 0;
+	width: 100%;
+	padding: 1em 0;
+	}
+
+	#main-menu.active {
+	display: flex;
+	}
+
+	#main-menu ul {
+	flex-direction: column;
+	gap: 0.5em;
+	align-items: center;
+	}
+
 }
