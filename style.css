@@ -944,6 +944,12 @@ table {
 	flex-direction: column;
 	gap: 0.5em;
 	align-items: center;
+
+	text-shadow:
+        -1px -1px 0 #000,
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;
 	}
 
 }
