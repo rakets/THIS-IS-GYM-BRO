@@ -379,11 +379,32 @@ table {
 	}
 
 	#aboutus h3 {
-		padding-left: 20px;
+		/* padding-left: 20px;
 		padding-right: 20px;
 		text-align: center;
 		color: #FFF;
-		font-size: 30px;
+		font-size: 30px; */
+		
+		padding: 20px;
+		text-align: center;
+		color: #fff;
+		font-size: 32px;
+		background: rgba(241, 142, 241, 0.1); /* Прозрачный белый */
+		backdrop-filter: blur(10px); /* Размытие фона */
+		-webkit-backdrop-filter: blur(10px); /* Поддержка для Safari */
+		border-radius: 12px;
+		box-shadow: 0 4px 20px rgba(241, 126, 229, 0.3);
+		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		letter-spacing: 1px;
+		margin: 20px auto;
+		max-width: 800px;
+		line-height: 1.4;
+
+		text-shadow:
+        -1px -1px 0 #000,
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;
 	}
 
 	/* Sekcja Kontakt */
@@ -758,9 +779,30 @@ table {
 	}
 
 	#aboutus h3 {
-		text-align: center;
+		/* text-align: center;
 		color: #FFF;
-		font-size: 30px;
+		font-size: 30px; */
+
+		padding: 20px;
+		text-align: center;
+		color: #fff;
+		font-size: 20px;
+		background: rgba(241, 142, 241, 0.1); /* Прозрачный белый */
+		backdrop-filter: blur(10px); /* Размытие фона */
+		-webkit-backdrop-filter: blur(10px); /* Поддержка для Safari */
+		border-radius: 12px;
+		box-shadow: 0 4px 20px rgba(241, 126, 229, 0.3);
+		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		letter-spacing: 1px;
+		margin: 20px auto;
+		max-width: 800px;
+		line-height: 1.4;
+
+		text-shadow:
+        -1px -1px 0 #000,
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;
 	}
 
 	#aboutus img {
