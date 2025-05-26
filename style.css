@@ -135,6 +135,33 @@ table {
 	border-spacing: 0;
 }
 
+.button {
+	display: inline-block;
+	text-decoration: none;
+	text-transform: uppercase;
+	border: none;
+	border-radius: 5px;
+	padding: 8px 20px;
+	margin: 16px 0;
+}
+
+.button-light {
+	background: #FFFFFF;
+	color: #000000;
+}
+
+.button-green {
+	background: #A1D76F;
+	color: #FFFFFF;
+}
+
+.text {
+	font-family: "Lato", sans-serif;
+	font-weight: 900;
+	font-style: italic;
+	margin: 0 auto;
+}
+
 @media screen and (min-width: 1400px) {
 
 	/* mobil */
@@ -214,34 +241,6 @@ table {
 	.offer h2 {
 		margin-bottom: 40px;
 		text-transform: uppercase;
-	}
-
-	/* Przyciski */
-	.button {
-		display: inline-block;
-		padding: 8px 20px;
-		margin: 16px 0;
-		text-decoration: none;
-		text-transform: uppercase;
-		border: none;
-		border-radius: 5px;
-	}
-
-	.button-light {
-		background: #FFFFFF;
-		color: #000000;
-	}
-
-	.button-green {
-		background: #A1D76F;
-		color: #FFFFFF;
-	}
-
-	.text {
-		font-family: "Lato", sans-serif;
-		font-weight: 900;
-		font-style: italic;
-		margin: 0 auto;
 	}
 
 	/* Baner */
@@ -521,6 +520,111 @@ table {
 	}
 }
 
+@media screen and (min-width: 992px) and (max-width: 1399px) {
+	/* Общие стили для среднего диапазона */
+
+	body {
+		background: url("imgProjektc/background_texture1.jpg");
+	}
+
+	#top {
+		font-size: 24px;
+		height: 3em;
+		background: #36152ac4;
+		position: sticky;
+		top: 0;
+		z-index: 1000;
+		backdrop-filter: blur(10px);
+	}
+
+	.mobil {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	#logo img {
+		width: 10em;
+		height: 3em;
+		border-top-right-radius: 1em;
+		border-bottom-right-radius: 1em;
+	}
+
+	#main-menu ul {
+		display: flex;
+		justify-content: space-between;
+		padding: 1em;
+	}
+
+	#main-menu ul li {
+		padding-left: 0.7em;
+		padding-right: 0.7em;
+	}
+
+	#main-menu ul li a {
+		font-size: 22px;
+		color: #FFF;
+		font-family: 'Lato', sans-serif;
+		text-decoration: none;
+	}
+
+	.banner-box {
+		margin: auto;
+		background: url("imgProjektc/banner.webp") 0 -100px;
+		border-radius: 40px;
+		height: 120px;
+		width: 90%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.banner-text {
+		text-align: center;
+		font-size: 40px;
+		color: #FFF;
+		text-transform: uppercase;
+	}
+
+	.cards {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	.card {
+		width: 15rem;
+		margin: 15px;
+	}
+
+	.card-text-title {
+		font-size: 24px;
+		padding: 60px;
+	}
+
+	#aboutus h3 {
+		font-size: 26px;
+		padding: 15px;
+	}
+
+	.three-columns {
+		width: 50%;
+		float: left;
+		box-sizing: border-box;
+		padding: 15px;
+	}
+
+	#contact h2,
+	#adress h2 {
+		font-size: 32px;
+	}
+
+	#contact input,
+	#contact button {
+		width: 70%;
+		font-size: 18px;
+	}
+}
+
 /* mobil */
 @media screen and (max-width: 992px) {
 
@@ -645,35 +749,6 @@ table {
 	.offer h2 {
 		margin-bottom: 40px;
 		text-transform: uppercase;
-	}
-
-	/* Przyciskи */
-	.button {
-		display: inline-block;
-		padding: 8px 20px;
-		margin: 16px 0;
-		text-decoration: none;
-		text-transform: uppercase;
-		border: none;
-		border-radius: 5px;
-	}
-
-	.button-light {
-		background: #FFFFFF;
-		color: #000000;
-	}
-
-	.button-green {
-		background: #A1D76F;
-		color: #FFFFFF;
-	}
-
-	.text {
-		font-family: "Lato", sans-serif;
-		font-weight: 900;
-		font-style: italic;
-		margin: 0 auto;
-		font-size: 25px;
 	}
 
 	section {
