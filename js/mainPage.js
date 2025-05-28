@@ -29,6 +29,10 @@ function openPDF(way){
     window.open(way, '_blank');
 }
 
+function openHTML(path) {
+  window.open(path, '_blank');
+}
+
 // function to send message in "Contact"
 function writeLetter(form, event){
     event.preventDefault(); 
